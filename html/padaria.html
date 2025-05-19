@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var precopao = Number(0.12)
+        var precobroa = Number(1.50)
+
+        var paes = Number(prompt("quantos pães foram vendidos? "))
+        var broas = Number(prompt("quantas broas foram vendidas? "))
+
+        var valorarrecadadopaes = paes * precopao
+        var valorarrecadadobroas = broas * precobroa
+
+        var valortotalarrecadado = valorarrecadadopaes + valorarrecadadobroas
+         
+        var poupanca = valortotalarrecadado * 10 / 100
+         
+        alert("voce arrecadou" + valortotalarrecadado + "com paes e broas")
+        alert("VOCE DEVE GUARDAR NA POUPANÇA: " + poupanca)
+    </script>
+    
+</body>
+</html>
