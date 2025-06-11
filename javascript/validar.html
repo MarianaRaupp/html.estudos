@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remover Elementos</title>
+  <style>
+    .item {
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Lista de Elementos</h2>
+
+<div id="container">
+  <div class="item">Elemento 1</div>
+  <div class="item">Elemento 2</div>
+  <div class="item">Elemento 3</div>
+</div>
+
+<button onclick="removerElemento()">Remover Elemento</button>
+
+<script>
+function removerElemento() {
+  const container = document.getElementById("container");
+  const elementos = container.getElementsByClassName("item");
+
+  if (elementos.length > 0) {
+    container.removeChild(elementos[0]);
+  } else {
+    alert("Não existe mais elementos.");
+  }
+}
+</script>
+
+</body>
+</html>
