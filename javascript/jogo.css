@@ -143,7 +143,7 @@ body {
     width: 100%; /* Preenche a largura do grid */
 }
 
-.answer-btn:hover {
+.answer-btn.hover {
     background-color: #0056b3;
 }
 .answer-btn.correct {
